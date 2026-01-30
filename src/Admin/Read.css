@@ -1,0 +1,159 @@
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f7fa;
+}
+
+.card {
+  background: linear-gradient(145deg, #ffffff, #e0e4e8);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.mb-3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+.mb-3 strong {
+  color: #1c2833;
+  font-weight: 600;
+}
+
+.imga {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.imga img {
+  width: 250px;
+  height: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imga img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+#btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+#btns .btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  min-width: 120px;
+  text-align: center;
+}
+
+#btns .btn-primary {
+  background: linear-gradient(135deg, #6a5acd, #483d8b);
+  color: #fff;
+  border: none;
+}
+
+#btns .btn-primary:hover {
+  background: linear-gradient(135deg, #4d526a, #2c2c54);
+  transform: scale(1.05);
+}
+
+#btns .btn-secondary {
+  background: linear-gradient(135deg, #ff6f61, #ff3b3b);
+  color: #fff;
+  border: none;
+}
+
+#btns .btn-secondary:hover {
+  background: linear-gradient(135deg, #e55b50, #c70000);
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .imga img {
+    width: 220px;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .imga img {
+    width: 200px;
+    height: 280px;
+  }
+
+  #btns .btn {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .imga img {
+    width: 150px;
+    height: 210px;
+  }
+
+  #btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #btns .btn {
+    width: 100%;
+  }
+}

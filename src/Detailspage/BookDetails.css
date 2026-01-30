@@ -1,0 +1,172 @@
+.book-details {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-details img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-details img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-info h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.book-info p {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.book-info strong {
+  color: #111;
+}
+
+.button-group {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.button-group .back-btn {
+  background: #939292;
+  color: #333;
+  height: 42px;
+}
+
+.button-group .back-btn:hover {
+  background: #b3b3b3;
+}
+
+.button-group .order-btn {
+  background: #c54618;
+  color: white;
+  height: 42px;
+}
+
+.button-group .order-btn:hover {
+  background: #39423a;
+}
+
+/* Dark mode support */
+html.dark .book-details {
+  background: #1e1e1e;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+html.dark .book-info h2 {
+  color: #f1f1f1;
+}
+
+html.dark .book-info p {
+  color: #ccc;
+}
+
+html.dark .button-group .back-btn {
+  background: #444;
+  color: #ddd;
+}
+
+html.dark .button-group .order-btn {
+  background: #ff8c42;
+  color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .book-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .book-details img {
+    width: 220px;
+    height: auto;
+  }
+
+  .book-info h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-details img {
+    width: 200px;
+  }
+
+  .book-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .button-group button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-details {
+    padding: 15px;
+  }
+
+  .book-details img {
+    width: 150px;
+    height: auto;
+  }
+
+  .book-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .book-info p {
+    font-size: 0.95rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
