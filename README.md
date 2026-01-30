@@ -27,3 +27,17 @@ The project allows users to view books, manage a cart, and simulates backend API
 
 ## 📂 Project Structure
 
+Book-Selling-Project/
+│
+├── public/
+├── src/
+│ ├── api/ # Axios configuration
+│ ├── components/ # Reusable UI components
+│ ├── Home/ # Home page sections
+│ ├── App.jsx
+│ └── main.jsx
+│
+├── db.json # JSON Server database
+├── package.json
+├── vite.config.js
+└── README.md
